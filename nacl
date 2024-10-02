@@ -1,0 +1,12 @@
+90	RDP (3389)	TCP (6)	           3389	         172.0.0.0/8	Allow
+91	SSH (22)        TCP (6)	           22	         172.0.0.0/8	Allow
+92	RDP (3389)	TCP (6)	           3389	         10.0.0.0/8	Allow
+93	SSH (22)        TCP (6)	           22	         10.0.0.0/8	Allow
+94	RDP (3389)	TCP (6)	           3389	         192.0.0.0/8	Allow
+95	SSH (22)        TCP (6)	           22	         192.0.0.0/8	Allow
+96	Custom UDP	UDP (17)           3389          0.0.0.0/0	Deny
+97	Custom UDP	UDP (17)           22	         0.0.0.0/0	Deny
+98	RDP (3389)	TCP (6)	           3389	         0.0.0.0/0	Deny
+99	SSH (22)        TCP (6)	           22	         0.0.0.0/0	Deny
+100	All traffic	All	           All	         0.0.0.0/0	Allow
+*	All traffic	All	           All	         0.0.0.0/0	Deny
