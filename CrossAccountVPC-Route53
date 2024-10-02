@@ -1,0 +1,5 @@
+Route53 account:
+aws route53 create-vpc-association-authorization --hosted-zone-id ABCDEFGH1234567 --vpc VPCRegion=eu-west-2,VPCId=vpc-0123456789ACBCD --region eu-west-2
+
+VPC account:
+aws route53 associate-vpc-with-hosted-zone --hosted-zone-id ABCDEFGH1234567 --vpc VPCRegion=eu-west-2,VPCId=vpc-0123456789ACBCD --region eu-west-2
