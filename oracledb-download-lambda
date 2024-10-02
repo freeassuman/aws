@@ -1,0 +1,12 @@
+mkdir -p lambda-layer/python
+cd lambda-layer/python
+pip3 install --platform manylinux2014_x86_64 --target . --python-version 3.12 --only-binary=:all: snowflake-connector-python oracledb
+cd ..
+ls -lart
+zip -r layer.zip python
+ls -lart
+aws s3 cp layer.zip s3://nplsit03
+
+Reference:
+https://repost.aws/knowledge-center/lambda-import-module-error-python
+https://repost.aws/knowledge-center/connect-lambda-to-an-rds-instance
