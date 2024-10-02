@@ -1,0 +1,3 @@
+aws ec2 modify-instance-metadata-options --instance-id <instance_id> --http-tokens required --http-endpoint enabled
+aws ec2 modify-instance-metadata-options --instance-id i-abcd1234 --http-tokens required --http-endpoint enabled --http-put-response-hop-limit 3
+aws ec2 describe-instances --instance-ids i-abcd1234
